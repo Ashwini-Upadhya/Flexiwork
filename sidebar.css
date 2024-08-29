@@ -1,0 +1,10 @@
+*{
+    height:max-content;
+    width: 10%;
+    margin: 20px;
+    background-color: lightblue;
+}
+div{
+    padding: 20px;
+    margin: 10px;
+}

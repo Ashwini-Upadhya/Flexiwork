@@ -1,0 +1,28 @@
+div{
+    /* color:white; */
+    display:block;
+    background-color: white;
+}
+.logo{
+    display:block;
+    justify-self: start;
+    background-color: white ;
+}
+.menu{
+    display:flex;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+#searchBar{
+    display:inline-flex;
+    /* justify-self:end; */
+    /* align-self:end; */
+    margin-left:350%;
+    
+}
+#searchButton{
+    display:block;
+margin-left: 350%;
+}
