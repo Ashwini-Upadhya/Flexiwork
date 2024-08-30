@@ -1,0 +1,16 @@
+.outerDiv{
+    display: block;
+    background-color: lightblue;
+    border-radius:15px;
+    color:white;
+    border: 1px ;
+    margin:10px;
+    margin-left: 200px;
+
+}
+.ApplyButton{
+    display:inline-flex;
+    margin: 100px;
+    justify-content:center;
+    align-items:center;
+}
