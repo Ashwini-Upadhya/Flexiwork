@@ -1,14 +1,19 @@
-import {useState} from "react" 
-import "./sidebar.css"
+import "./sidebar.css";
+
 export default function Sidebar() {
-    let sisebarMenu = {
-        Home: <a href="/home"></a>
-    }
-    return(
-        <>
-        <div>
-            
+    const sidebarMenu = {
+        home: <a href="/home">Home</a>,
+        setting: <a href="/setting">Setting</a>,
+        about: <a href="/about">About Us</a>
+    };
+
+    return (
+        <div className="sidebar">
+            {Object.entries(sidebarMenu).map(([key, link]) => (
+                <div key={key} className="sidebar-item">
+                    {link}
+                </div>
+            ))}
         </div>
-        </>
-    )
+    );
 }

@@ -1,10 +1,11 @@
 #head{
     display: flex;
-    margin: 10px;
+    position:relative;
     background-color:white;
 }
-h3 {
+.flexiwork{
     display:flex;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
+    margin-left:200px;
 }
