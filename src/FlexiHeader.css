@@ -1,0 +1,51 @@
+div{
+    display:block;
+    position:relative;
+    background-color: white;
+}
+.logo{
+    display:flex;
+    justify-self: start;
+    font-family: fantasy;
+    font-size: large;
+    background-color: white ;
+    padding-right:5%;
+}
+.menu{
+    display:flex;
+    gap:10px;
+    flex-grow: 1;
+    background-color: white;
+    padding: 10px 20px;
+    justify-content: flex-start;
+}
+#head{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    background-color:white;
+    padding: 10px;
+}
+#searchBar{
+    display:inline-flex;
+    height: 30px;
+    width: 150px;
+    border-radius:20px;
+    background-color: white;
+    border:1px solid;
+    padding: 2px 10px;
+    
+}
+#searchButton{
+    display:inline-flex;
+    border-radius:20px;
+    margin-left: -40px;
+    background-color:white;
+    border:0px;
+}
+#searchButton i {
+    height: 20px;
+    width: 20px;
+
+}
