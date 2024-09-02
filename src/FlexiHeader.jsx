@@ -7,7 +7,7 @@ export default function FlexiHeader() {
     return(
         <div>
             <header id='head'>
-                <span className="logo"> Flexiwork </span> <SearchBox/>
+                <span className="logo"> <img src="imgpsh_fullsize_anim (3).png" alt="FlexiWork" /> </span> <SearchBox/>
             </header>
             <menu className="menu"> 
                 {Menu.map((values) =>( <button style={{margin:'10px', height:'30px', border:'0px', paddingLeft:'15px',paddingRight:'15px', borderRadius:'20px'}}>{values}</button>))} 
