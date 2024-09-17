@@ -1,10 +1,14 @@
 /* General styles for the navbar */
 .navbar {
   display: flex;
+  position: sticky;
+  top: 0; /* Ensures it sticks to the top of the viewport */
+  z-index: 1000; /* Keeps it above other content */
+  overflow: hidden;
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  padding: 10px 20px;
+  padding: 20px 20px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
 }
@@ -26,6 +30,10 @@
   color: #333;
 }
 
+.search-container {
+  position: relative;
+}
+
 .navbar-search {
   margin-left: 20px;
   padding: 8px 30px 8px 38px;
@@ -33,14 +41,8 @@
   border-radius: 20px;
   border: 1px solid #121111;
   outline: none;
-  /* padding-left: 30px; */
   width: 200px;
   box-sizing: border-box;
-}
-
-.search-container {
-  position: relative;
-  display: inline-block;
 }
 
 .search-icon {
@@ -106,7 +108,7 @@
 
 /* Notification Icon with hover effect */
 .notification-icon {
-  font-size: 100px;
+  font-size: 24px; /* Adjusted size for consistency */
   color: black;
   transition: color 0.3s, background-color 0.3s;
   padding: 5px;
@@ -119,7 +121,7 @@
 }
 
 .profile-icon {
-  font-size: 100px;
+  font-size: 24px; /* Adjusted size for consistency */
   color: black;
   transition: color 0.3s, background-color 0.3s;
   padding: 5px;
