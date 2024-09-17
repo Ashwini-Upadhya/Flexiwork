@@ -12,9 +12,9 @@ const Navbar = () => {
         </a>
 
         <div className="search-container">
-          {/* <SearchIcon className="search-icon" /> */}
-          <input type="text" className="navbar-search" placeholder="Search Jobs" />
-          
+          <input  type="text" className="navbar-search" placeholder="Search Jobs"  />
+          <SearchIcon className="search-icon" />
+
         </div>
       </div>
 

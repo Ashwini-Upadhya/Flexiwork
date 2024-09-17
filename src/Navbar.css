@@ -28,11 +28,28 @@
 
 .navbar-search {
   margin-left: 20px;
-  padding: 6px 10px;
+  padding: 8px 30px 8px 38px;
   font-size: 14px;
   border-radius: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #121111;
   outline: none;
+  /* padding-left: 30px; */
+  width: 200px;
+  box-sizing: border-box;
+}
+
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #121111;
 }
 
 /* Center section (navigation links) */
@@ -102,7 +119,7 @@
 }
 
 .profile-icon {
-    font-size: 100px;
+  font-size: 100px;
   color: black;
   transition: color 0.3s, background-color 0.3s;
   padding: 5px;
@@ -110,9 +127,9 @@
 }
 
 .profile-icon:hover {
-    color: #007bff;
-    background-color: #eae9f1   ;
-  }
+  color: #007bff;
+  background-color: #eae9f1;
+}
 
 .navbar-button {
   border: none;
