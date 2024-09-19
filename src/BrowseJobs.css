@@ -1,0 +1,52 @@
+.browse-jobs {
+    text-align: center;
+    padding: 20px;
+    margin-top: 70px;
+  }
+  
+  .browse-jobs h1 {
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .browse-jobs p {
+    margin-top: 5px;
+    color: #666;
+  }
+  
+  .filter-buttons {
+    margin: 20px 0;
+    background-color: #eaebf4a5;
+    height: 55px;
+    width: 420px;
+    border-radius: 30px;
+    margin-left: 526px;
+  }
+  #job {
+    margin-left: 11px;
+  }
+  .filter-buttons button {
+    margin-top: 6.5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #eaebf4a5;
+    color: #1e1d1d;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 1em;
+  } 
+  
+  .filter-buttons .active {
+    background-color: #fff;
+    border: 2px solid #f3eded;
+  }
+  
+  .job-cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
