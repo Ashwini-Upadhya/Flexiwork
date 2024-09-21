@@ -4,7 +4,7 @@ import "./BrowseJobs.css"; // Import styles
 import { jobs, internships, challenges } from "./Data.json"; // Import all data
 
 const BrowseJobs = () => {
-  const [selectedCategory, setSelectedCategory] = useState("Jobs");
+  const [selectedCategory, setSelectedCategory] = useState('Jobs');
 
   // Function to determine which data to display based on selected category
   const getFilteredData = () => {

@@ -13,8 +13,8 @@ class Hero_Slider extends Component{
             slidesToShow: 3,
             slidesToScroll: 1,
             autoplay: true,
-            speed: 4000,
-            autoplaySpeed: 3000,
+            speed: 3000,
+            autoplaySpeed: 2000,
             cssEase: "linear"
         }
     return (

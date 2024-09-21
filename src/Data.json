@@ -28,7 +28,7 @@
         "views": "2,655",
         "timeLeft": "3 months left",
         "logo": "/images/company2.png",
-        "bgColor": "yellow-bg"
+        "bgColor": "pink-bg"
       },
       {
         "title": "MySQL Database Executive",
@@ -38,7 +38,7 @@
         "views": "2,655",
         "timeLeft": "3 months left",
         "logo": "/images/company2.png",
-        "bgColor": "yellow-bg"
+        "bgColor": "blue-bg"
       }
     ],
     "internships": [
@@ -50,7 +50,7 @@
         "views": "1,500",
         "timeLeft": "2 months left",
         "logo": "/images/company3.png",
-        "bgColor": "blue-bg"
+        "bgColor": "green-bg"
       },
       {
         "title": "Software Engineer Intern",
@@ -60,7 +60,7 @@
         "views": "1,500",
         "timeLeft": "2 months left",
         "logo": "/images/company3.png",
-        "bgColor": "blue-bg"
+        "bgColor": "yellow-bg"
       },
       {
         "title": "Software Engineer Intern",
@@ -70,7 +70,7 @@
         "views": "1,500",
         "timeLeft": "2 months left",
         "logo": "/images/company3.png",
-        "bgColor": "blue-bg"
+        "bgColor": "pink-bg"
       },
       {
         "title": "Software Engineer Intern",
@@ -93,7 +93,7 @@
         "views": "500",
         "timeLeft": "1 month left",
         "logo": "/images/challenge1.png",
-        "bgColor": "purple-bg"
+        "bgColor": "green-bg"
       },
       {
         "title": "Software Engineer Intern",
@@ -103,7 +103,7 @@
         "views": "1,500",
         "timeLeft": "2 months left",
         "logo": "/images/company3.png",
-        "bgColor": "blue-bg"
+        "bgColor": "yellow-bg"
       },
       {
         "title": "Software Engineer Intern",
@@ -113,7 +113,7 @@
         "views": "1,500",
         "timeLeft": "2 months left",
         "logo": "/images/company3.png",
-        "bgColor": "blue-bg"
+        "bgColor": "pink-bg"
       },
       {
         "title": "Software Engineer Intern",
