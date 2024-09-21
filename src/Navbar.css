@@ -78,7 +78,7 @@
 
 /* Active state styling */
 .navbar-link.active {
-  color: #000; /* Black text */
+  color: #007bff; /* Black text */
   background-color: #fff; /* White background */
   border: 1.5px solid #007bff; /* Blue outline */
   border-radius: 15px; /* Rounded corners for the button effect */

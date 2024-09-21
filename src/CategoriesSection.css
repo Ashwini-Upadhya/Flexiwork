@@ -81,28 +81,29 @@
 
 /* Specific colors for each category */
 .internship {
-    background-color: #b6dfc3;
+    background-color: #a4d6af; /* Slightly darker green */
 }
 
 .learn {
-    background-color: #ffc3d6;
+    background-color: #ffb2c6; /* Slightly darker pink */
 }
 
 .jobs {
-    background-color: #c3e0ff;
+    background-color: #accff6; /* Slightly darker blue */
 }
 
 .practice {
-    background-color: #e5d1ff;
+    background-color: #d5bff7; /* Slightly darker purple */
 }
 
 .compete {
-    background-color: #ffd98b;
+    background-color: #ffda76; /* Slightly darker yellow */
 }
 
 .mentorship {
-    background-color: #ffe5b4;
+    background-color: #ffd4a3; /* Slightly darker peach */
 }
+
 
 /* Responsive layout */
 @media (max-width: 768px) {
