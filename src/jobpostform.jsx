@@ -14,6 +14,9 @@ import './jobpostform.css';
 import cities from './indianCities';
 import  Category  from './jCategory';
 import Skills from './skillsReq';
+import { CKEditor } from '@ckeditor/ckeditor5-react';
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import Button from '@mui/material/Button';
   
   // Multi-select styling
   const ITEM_HEIGHT = 48;
@@ -63,9 +66,9 @@ export default function Jobpostform() {
         workLocation: [],
         jobCategory: [],
         skillsRequired: [],
-        eligibility: "",
+        
         experienceRequired: "",
-        fresherPassOutYears: [],
+        
         salaryType: "",
         salaryRange: "",
         otherBenefits: "",
@@ -177,9 +180,9 @@ export default function Jobpostform() {
             workLocation: [],
             jobCategory: [],
             skillsRequired: [],
-            eligibility: "",
+            
             experienceRequired: "",
-            fresherPassOutYears: [],
+            
             salaryType: "",
             salaryRange: "",
             otherBenefits: "",
@@ -192,7 +195,7 @@ export default function Jobpostform() {
         <form className="form-container" onSubmit={handlesubmit}>
             
             
-                    
+                {/* Company logo & Company Name Section */}
         <div className="form-group">
                     <label htmlFor="companyName" className="form-label">Company Logo & Company Name*</label>
                     <div className="input-container">
@@ -241,6 +244,7 @@ export default function Jobpostform() {
                     </div>
                 </div>
        
+                 {/* Job title Section */}
                <div className="form-group">
                    <label htmlFor="jobTitle" className="form-label">Job Title/Role*</label>
                    <div className="input-container">
@@ -284,6 +288,8 @@ export default function Jobpostform() {
                     </div>
                 </div>
 
+
+                {/* Jobt time Section */}
                 <div  className="form-group">
                     <label htmlFor="jobTime" className="form-label">Job Time*</label>
                     <div className="button-group">
@@ -304,9 +310,10 @@ export default function Jobpostform() {
                     </div>
                 </div>
 
+                {/* WorkPlace Type Section */}
                 <div className="form-group">
                     
-                    <label className="form-label">Workplace Type*</label>
+                    <label htmlFor="workplaceType" className="form-label">Workplace Type*</label>
                     <div className="radio-group">
                         <div>
                             <label htmlFor="inOffice">
@@ -351,7 +358,7 @@ export default function Jobpostform() {
                {/* Work Location with multi-select */}
         <div className="form-group">
           <label htmlFor="workLocation" className="form-label">Work Location*</label>
-          <FormControl sx={{ m: 0.1, width: 890 }}>
+          <FormControl sx={{ m: 0.1, width: 899 }}>
             <InputLabel id="workLocation-label">Select Cities</InputLabel>
             <Select
               labelId="workLocation-label"
@@ -385,9 +392,11 @@ export default function Jobpostform() {
           </FormControl>
         </div>
                 
+
+                {/* Jobt Category Section */}
                 <div className="form-group">
           <label htmlFor="jobCategory" className="form-label">Job Category*</label>
-          <FormControl sx={{ m: 0.1, width: 890 }}>
+          <FormControl sx={{ m: 0.1, width: 899 }}>
             <InputLabel id="jobCategory-label">Select Job Categories</InputLabel>
             <Select
               labelId="jobCategory-label"
@@ -421,11 +430,10 @@ export default function Jobpostform() {
           </FormControl>
         </div>
 
-
-
+                {/* Sklls Required Section */}
                 <div className="form-group">
           <label htmlFor="skillsRequired" className="form-label">Skills Required*</label>
-          <FormControl sx={{ m: 0.1, width: 890 }}>
+          <FormControl sx={{ m: 0.1, width: 899 }}>
             <InputLabel id="skillsRequired-label">Select Skills Required</InputLabel>
             <Select
               labelId="skillsRequired-label"
@@ -459,124 +467,133 @@ export default function Jobpostform() {
           </FormControl>
         </div>
 
+                {/* Experience Required Section */}
                 <div className="form-group">
-                    <label htmlFor="experienceRequired" className="form-label">Experience Required (in Years)</label>
-                    <select
-                        id="experienceRequired"
-                        name="experienceRequired"
-                        className="form-input"
-                        value={formdata.experienceRequired}
-                        onChange={handleinput}
-                    >
-                        <option value="Fresher">Fresher</option>
-                        <option value="Experienced">Experienced</option>
-                    </select>
+  <label htmlFor="experienceRequired" className="form-label">Experience Required (in Years)</label>
+  
+  <FormControl fullWidth>
+    <InputLabel id="experience-required-label">Experience</InputLabel>
+    <Select
+      labelId="experience-required-label"
+      id="experienceRequired"
+      name="experienceRequired"
+      value={formdata.experienceRequired}
+      label="Experience"
+      onChange={handleinput}
+    >
+      <MenuItem value="Fresher">Fresher</MenuItem>
+      <MenuItem value="Experienced">Experienced</MenuItem>
+      <MenuItem value="College Student">College Student</MenuItem>
+      <MenuItem value="Fresher & Experienced">Fresher & Experienced</MenuItem>
+      <MenuItem value="College Student, Fresher & Experienced">College Student, Fresher & Experienced</MenuItem>
+      <MenuItem value="College Student & Fresher">College Student & Fresher</MenuItem>
+    </Select>
+  </FormControl>
                 </div>
 
+                
+                     {/* Salary Type Section */}
                 <div className="form-group">
-                    <label className="form-label">Fresher Pass Out Years</label>
-                    <div className="checkbox-group">
-                        <div>
-                            <input
-                                type="checkbox"
-                                id="2021"
-                                name="fresherPassOutYears"
-                                value="2021"
-                                onChange={handleinput}
-                            />
-                            <label htmlFor="2021">2021</label>
-                        </div>
+  <label htmlFor="salaryType" className="form-label">Salary Type</label>
+  
+  <FormControl fullWidth>
+    <InputLabel id="salary-type-label">Salary Type</InputLabel>
+    <Select
+      labelId="salary-type-label"
+      id="salaryType"
+      name="salaryType"
+      value={formdata.salaryType}
+      label="Salary Type"
+      onChange={handleinput}
+    >
+      <MenuItem value="Fixed">Fixed</MenuItem>
+      <MenuItem value="Range">Range</MenuItem>
+      <MenuItem value="Fixed + Incentive">Fixed + Incentive</MenuItem>
+    </Select>
+  </FormControl>
+                   </div>
 
-                        <div>
-                            <input
-                                type="checkbox"
-                                id="2022"
-                                name="fresherPassOutYears"
-                                value="2022"
-                                onChange={handleinput}
-                            />
-                            <label htmlFor="2022">2022</label>
-                        </div>
-
-                        <div>
-                            <input
-                                type="checkbox"
-                                id="2023"
-                                name="fresherPassOutYears"
-                                value="2023"
-                                onChange={handleinput}
-                            />
-                            <label htmlFor="2023">2023</label>
-                        </div>
-
-                        <div>
-                            <input
-                                type="checkbox"
-                                id="2024"
-                                name="fresherPassOutYears"
-                                value="2024"
-                                onChange={handleinput}
-                            />
-                            <label htmlFor="2024">2024</label>
-                        </div>
-                    </div>
+                  {/* Salary range Section */}
+                <div className="form-group">
+                    <label htmlFor="salaryRange" className="form-label">Salary Range*</label>
+                    
+                     <div className="input-container">
+                        
+                        {/* Updated Company Name Input with Material UI TextField */}
+                        <TextField
+                            required
+                            id="outlined-required"
+                            label="Enter Salary Range"
+                            
+                            variant="outlined"
+                            value={formdata.salaryRange}
+                            name="salaryRange"
+                            onChange={handleinput}
+                            className="salaryRange"
+                            fullWidth
+                           
+                        /> </div>
                 </div>
 
-                <div className="form-group">
-                    <label htmlFor="salaryType" className="form-label">Salary Type</label>
-                    <select
-                        id="salaryType"
-                        name="salaryType"
-                        className="form-input"
-                        value={formdata.salaryType}
-                        onChange={handleinput}
-                    >
-                        <option value="Fixed">Fixed</option>
-                        <option value="Range">Range</option>
-                        <option value="Fixed + Incentive">Fixed + Incentive</option>
-                    </select>
-                </div>
-
-                <div className="form-group">
-                    <label htmlFor="salaryRange" className="form-label">Salary Range</label>
-                    <input
-                        type="text"
-                        className="form-input"
-                        placeholder="Enter Salary Range"
-                        value={formdata.salaryRange}
-                        id="salaryRange"
-                        name="salaryRange"
-                        onChange={handleinput}
-                    />
-                </div>
-
+               {/* other Benefites Section */}
                 <div className="form-group">
                     <label htmlFor="otherBenefits" className="form-label">Other Benefits</label>
-                    <input
-                        type="text"
-                        className="form-input"
-                        placeholder="Enter Benefits"
-                        value={formdata.otherBenefits}
-                        id="otherBenefits"
-                        name="otherBenefits"
-                        onChange={handleinput}
-                    />
+                    
+                    <div className="input-container">
+                        
+                        {/* Updated Company Name Input with Material UI TextField */}
+                        
+                        <TextField
+                            id="outlined-basic"
+                            label="Enter Benefits"
+                            
+                            variant="outlined"
+                            value={formdata.otherBenefits}
+                            name="otherBenefits"
+                            onChange={handleinput}
+                            className="otherBenefits"
+                            fullWidth
+                           
+                        /> </div>
+                        
                 </div>
 
+                {/* jobDescription Section */}
                 <div className="form-group">
-                    <label htmlFor="jobDescription" className="form-label">Job Description</label>
-                    <textarea
-                        className="form-textarea"
-                        placeholder="Roles, Responsibilities, Requirements"
-                        value={formdata.jobDescription}
-                        id="jobDescription"
-                        name="jobDescription"
-                        onChange={handleinput}
-                    />
-                </div>
+  <label htmlFor="jobDescription" className="form-label">Job Description</label>
+  
+  <CKEditor
+    editor={ClassicEditor}
+    data={formdata.jobDescription}
+    onChange={(event, editor) => {
+      const data = editor.getData();
+      handleinput({ target: { name: 'jobDescription', value: data } });
+    }}
+    config={{
+      toolbar: [
+        'bold', 'italic', 'underline', 'bulletedList', 'numberedList', 'blockQuote',
+        'alignment:left', 'alignment:center', 'alignment:right', 'alignment:justify',
+        'link', 'imageUpload', 'undo', 'redo'
+      ],
+      placeholder: "Roles, Responsibilities, Requirements",
+      heading: {
+        options: [
+          { model: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph' },
+        ]
+      }
+    }}
+    className="jobDescription"
+  />
+
+<style jsx>{`
+    .ck-editor__editable {
+      min-height: 200px; /* Adjust this height to add 5 rows */
+    }
+  `}</style>
+</div>
 
                 <div className="form-group">
-                    <button type="submit" className="form-button">Submit</button>
+                    <Button type="submit" variant="contained">Submit</Button>
                 </div>
 
             </form>
