@@ -1,15 +1,17 @@
 import React from 'react';
 import './Navbar.css';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import NotificationsActiveOutlinedIcon from '@mui/icons-material/NotificationsActiveOutlined';
 import SearchIcon from '@mui/icons-material/Search';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-left">
-        <a className="navbar-logo" href="#">
+        
+        <Link className="navbar-logo" to="/">
           <span className="brand-highlight">Flexi</span>Work
-        </a>
+        </Link>
 
         <div className="search-container">
           <input  type="text" className="navbar-search" placeholder="Search Jobs"  />
@@ -39,14 +41,19 @@ const Navbar = () => {
 
         <a className="navbar-icon" href="#">
         <img
+        
             src="src\images\i2.png"
             alt="Profile Icon"
             className="profile-icon"
           />
           
         </a>
-        <button className="navbar-button host-button">Login</button>
+        <Link to="/login">
+          <button className="navbar-button host-button">Login</button>
+        </Link>
+        <Link to="/Signup">
         <button className="navbar-button business-button">Sign in</button>
+        </Link>
       </div>
     </nav>
   );
