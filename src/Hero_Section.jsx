@@ -1,10 +1,11 @@
 import React from 'react';
 import './Hero_Section.css';
 import { Link } from 'react-router-dom'; // Import Link for navigation
+import Navbar from './Navbar';
 
 const Hero_Section = () => {
   return (
-    <section className="hero-section">
+    <><Navbar /><section className="hero-section">
       <div className="hero-content">
         <div className="hero-text">
           <h1 className="hero-headline">
@@ -14,9 +15,9 @@ const Hero_Section = () => {
             Apply to a plethora of hiring opportunities & work with your dream company!
           </p>
           <div className="hero-buttons">
-            <a href="#find-jobs" className="btn btn-primary">
+            <Link to="/findjob" className="btn btn-primary">
               Find Jobs
-            </a>
+            </Link>
             {/* Use Link to navigate to the job post form */}
             <Link to="/post-form" className="btn btn-secondary">
               Post Jobs
@@ -28,7 +29,7 @@ const Hero_Section = () => {
           <img src="src/images/h1.png" alt="Hero" />
         </div>
       </div>
-    </section>
+    </section></>
   );
 };
 

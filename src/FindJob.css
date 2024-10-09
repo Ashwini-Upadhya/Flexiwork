@@ -1,0 +1,174 @@
+/* Body styling to cover full page background */
+body {
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    
+}
+
+/* Container styling */
+.findjob-container {
+    display: flex;
+    flex-direction: column;
+    border-top: 0.1px solid rgba(0, 0, 0, 0.137);
+}
+
+/* Filter section styling */
+.job-filter-section {
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+    background-color: #fff;
+    position: sticky;
+    top: 64px;
+    z-index: 9999;
+    padding: 13px 0 13px 200px;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+/* Button styling */
+.job-filter-btn, .job-filter-btn-blue {
+    position: relative;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 22px;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.job-filter-btn {
+    color: var(--grey-1100);
+    background: var(--grey-00);
+    border: 1px solid #e2e2e2;
+}
+
+.job-filter-btn-blue {
+    background-color: #0073e6;
+    color: #fff;
+    border: 1px solid #e2e2e2;
+}
+
+.job-filter-btn-blue:hover {
+    background-color: #0057b7;
+}
+
+/* Button hover effect */
+.job-filter-btn:hover {
+    background-color: #f1f1f1;
+}
+
+/* Dropdown content styling */
+.job-dropdown-content {
+    position: absolute;
+    background-color: #fff;
+    min-width: 112px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding: 10px;
+    border-radius: 4px;
+    top: calc(100% + 4px);
+    left: -4px;
+    text-align: left;
+}
+
+.jobIntern-container {
+    position: absolute;
+    color: black;
+    background-color: #fff;
+    min-width: 112px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding: 10px;
+    border-radius: 4px;
+    top: calc(100% + 4px);
+    left: -4px;
+    text-align: left;
+}
+
+.jobIntern-container div,
+.jobIntern-container label {
+    padding: 8px 12px;
+    cursor: pointer;
+    display: block;
+}
+
+.jobIntern-container div:hover,
+.jobIntern-container label:hover {
+    background-color: #f1f1f1;
+}
+
+/* Job listings and details section styling */
+.findjob-listing, .findjob-detail {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+
+
+/* Maintain the hover effect */
+.job-dropdown-content div,
+.job-dropdown-content label {
+    padding: 8px 12px;
+    cursor: pointer;
+    display: block;
+}
+
+/* Dropdown items hover */
+.job-dropdown-content div:hover,
+.job-dropdown-content label:hover {
+    background-color: #f1f1f1;
+}
+
+/* Checkbox styling for multiple selection */
+.job-multiple-select input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #0073e6;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+/* Apply Filter Button Styling */
+.apply-filter-btn {
+    margin-top: 10px;
+    padding: 6px 12px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .apply-filter-btn:hover {
+    background-color: #0057b7;
+  }
+  
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .job-filter-section {
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 0;
+    }
+
+    .job-filter-btn {
+        width: 100%;
+    }
+
+    .findjob-container {
+        padding: 10px;
+    }
+
+    .findjob-listing,
+    .findjob-detail {
+        padding: 15px;
+    }
+}

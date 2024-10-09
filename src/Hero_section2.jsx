@@ -1,26 +1,28 @@
 import React from 'react';
 import './Hero_section2.css'; // Ensure this file includes the updated CSS
+import Footer from './Footer';
+import { Link } from 'react-router-dom';
 // import Hero_Slider from './Hero_Slider';
 
 const Hero_section2 = () => {
   return ( 
-    <section className="hero-section">
+    <><section className="hero-section">
       <div className="hero-content">
         <div className="hero-text">
           <h1 className="hero-headline">
-            <span className="text-light-blue">Post Your</span> <span className="text-black">Jobs <br/>& Internships</span>
+            <span className="text-light-blue">Post Your</span> <span className="text-black">Jobs <br />& Internships</span>
           </h1>
           <p className="hero-paragraph">
-          Find the right candidate from a diverse talent
-          <br />
-          pool for your role
+            Find the right candidate from a diverse talent
+            <br />
+            pool for your role
           </p>
           <div className="hero-buttons">
-  <a href="#find-jobs" className="btn btn-primary">
-    Post Jobs Now
-  </a>
-  
-</div>                                                                          
+            <Link to="/post-form" className="btn btn-primary">
+              Post Jobs Now
+            </Link>
+
+          </div>
 
         </div>
         <div className="hero-image">
@@ -29,7 +31,7 @@ const Hero_section2 = () => {
         </div>
         {/* <Hero_Slider/> */}
       </div>
-    </section>
+    </section><Footer /></>
   );
 };
 

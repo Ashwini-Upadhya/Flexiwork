@@ -7,20 +7,31 @@ import Hero_section2 from './Hero_section2'
 import Hero_Slider from './Hero_Slider'
 import Jobpostform from './jobpostform'
 import JobsCategory from './JobsCategory'
+import Login from './Login'
 import Navbar from './Navbar'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Signup from './Signup'
+import FindJob from './FindJob'
+import JobPostCard from './JobPostCard'
 
 function App() {
   return (
     <Router>
       <div className="App">
         {/* Navbar remains consistent across pages */}
-        <Navbar />
+        
 
         {/* Define Routes */}
         <Routes>
+          {/* Route for Login and Sign up */}
+           <Route path="/login" element={<Login />} />
+           <Route path='/Signup' element={<Signup/>} />
+
           {/* Route for post job form */}
           <Route path="/post-form" element={<Jobpostform />} />
+
+          {/* Route for FindJOb */}
+          <Route path="/findjob" element={<JobPostCard />} />
           
           {/* The rest of the components will be available on the main route */}
           <Route
@@ -39,7 +50,7 @@ function App() {
         </Routes>
 
         {/* Footer remains at the bottom */}
-        <Footer />
+        
       </div>
     </Router>
   )
