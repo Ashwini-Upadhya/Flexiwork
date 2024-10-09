@@ -1,0 +1,130 @@
+{
+    "jobs": [
+      {
+        "title": "Senior DevOps Engineer (OpenShift, Docker,...)",
+        "company": "Triumph Ladders",
+        "type": "In Office",
+        "cost": "Free",
+        "views": "2,585",
+        "timeLeft": "3 months left",
+        "logo": "/images/company1.png",
+        "bgColor": "green-bg"
+      },
+      {
+        "title": "MySQL Database Executive",
+        "company": "Triumph Ladders",
+        "type": "In Office",
+        "cost": "Free",
+        "views": "2,655",
+        "timeLeft": "3 months left",
+        "logo": "/images/company2.png",
+        "bgColor": "yellow-bg"
+      },
+      {
+        "title": "MySQL Database Executive",
+        "company": "Triumph Ladders",
+        "type": "In Office",
+        "cost": "Free",
+        "views": "2,655",
+        "timeLeft": "3 months left",
+        "logo": "/images/company2.png",
+        "bgColor": "pink-bg"
+      },
+      {
+        "title": "MySQL Database Executive",
+        "company": "Triumph Ladders",
+        "type": "In Office",
+        "cost": "Free",
+        "views": "2,655",
+        "timeLeft": "3 months left",
+        "logo": "/images/company2.png",
+        "bgColor": "blue-bg"
+      }
+    ],
+    "internships": [
+      {
+        "title": "Software Engineer Intern",
+        "company": "Tech Corp",
+        "type": "Remote",
+        "cost": "Free",
+        "views": "1,500",
+        "timeLeft": "2 months left",
+        "logo": "/images/company3.png",
+        "bgColor": "green-bg"
+      },
+      {
+        "title": "Software Engineer Intern",
+        "company": "Tech Corp",
+        "type": "Remote",
+        "cost": "Free",
+        "views": "1,500",
+        "timeLeft": "2 months left",
+        "logo": "/images/company3.png",
+        "bgColor": "yellow-bg"
+      },
+      {
+        "title": "Software Engineer Intern",
+        "company": "Tech Corp",
+        "type": "Remote",
+        "cost": "Free",
+        "views": "1,500",
+        "timeLeft": "2 months left",
+        "logo": "/images/company3.png",
+        "bgColor": "pink-bg"
+      },
+      {
+        "title": "Software Engineer Intern",
+        "company": "Tech Corp",
+        "type": "Remote",
+        "cost": "Free",
+        "views": "1,500",
+        "timeLeft": "2 months left",
+        "logo": "/images/company3.png",
+        "bgColor": "blue-bg"
+      }
+      
+    ],
+    "challenges": [
+      {
+        "title": "Coding Challenge 2024",
+        "company": "Code Arena",
+        "type": "Online",
+        "cost": "Free",
+        "views": "500",
+        "timeLeft": "1 month left",
+        "logo": "/images/challenge1.png",
+        "bgColor": "green-bg"
+      },
+      {
+        "title": "Software Engineer Intern",
+        "company": "Tech Corp",
+        "type": "Remote",
+        "cost": "Free",
+        "views": "1,500",
+        "timeLeft": "2 months left",
+        "logo": "/images/company3.png",
+        "bgColor": "yellow-bg"
+      },
+      {
+        "title": "Software Engineer Intern",
+        "company": "Tech Corp",
+        "type": "Remote",
+        "cost": "Free",
+        "views": "1,500",
+        "timeLeft": "2 months left",
+        "logo": "/images/company3.png",
+        "bgColor": "pink-bg"
+      },
+      {
+        "title": "Software Engineer Intern",
+        "company": "Tech Corp",
+        "type": "Remote",
+        "cost": "Free",
+        "views": "1,500",
+        "timeLeft": "2 months left",
+        "logo": "/images/company3.png",
+        "bgColor": "blue-bg"
+      }
+    ]
+  }
+  

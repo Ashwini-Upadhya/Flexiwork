@@ -1,14 +1,10 @@
 /* General styles for the navbar */
 .navbar {
   display: flex;
-  position: sticky;
-  top: 0; /* Ensures it sticks to the top of the viewport */
-  z-index: 1000; /* Keeps it above other content */
-  overflow: hidden;
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  padding: 20px 20px;
+  padding: 10px 20px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
 }
@@ -30,10 +26,6 @@
   color: #333;
 }
 
-.search-container {
-  position: relative;
-}
-
 .navbar-search {
   margin-left: 20px;
   padding: 8px 30px 8px 38px;
@@ -41,8 +33,14 @@
   border-radius: 20px;
   border: 1px solid #121111;
   outline: none;
+  /* padding-left: 30px; */
   width: 200px;
   box-sizing: border-box;
+}
+
+.search-container {
+  position: relative;
+  display: inline-block;
 }
 
 .search-icon {
@@ -55,49 +53,30 @@
 }
 
 /* Center section (navigation links) */
-/* Flexbox for centered links with spacing */
 .navbar-center {
   display: flex;
   gap: 15px;
 }
 
-/* Basic styling for the navigation links */
 .navbar-link {
   color: #333;
   text-decoration: none;
   padding: 8px 12px;
   font-size: 14px;
   font-weight: normal;
-  transition: all 0.3s ease;
 }
 
-/* Hover state for links */
 .navbar-link:hover {
   color: #007bff;
 }
 
-/* Active state styling */
-.navbar-link.active {
-  color: #007bff; /* Black text */
-  background-color: #fff; /* White background */
-  border: 1.5px solid #007bff; /* Blue outline */
-  border-radius: 15px; /* Rounded corners for the button effect */
-  padding: 6px 10px; /* Adjusted padding to accommodate border */
-}
-
-/* Optional: Slight hover effect for the active link */
-.navbar-link.active:hover {
-  background-color: #f0f0f0; /* Slightly darker background on hover */
-}
-
-
-/* .active {
+.active {
   color: white;
   font-weight: bold;
-} */
+}
 
 /* Enhanced Design for Jobs Button */
-/* .jobs-button {
+.jobs-button {
   background-color: #007bff;
   color: white;
   padding: 8px 20px;
@@ -110,7 +89,7 @@
 .jobs-button:hover {
   background-color: #0056b3;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-} */
+}
 
 /* Right section (icons + buttons) */
 .navbar-right {
@@ -127,7 +106,7 @@
 
 /* Notification Icon with hover effect */
 .notification-icon {
-  font-size: 24px; /* Adjusted size for consistency */
+  font-size: 100px;
   color: black;
   transition: color 0.3s, background-color 0.3s;
   padding: 5px;
@@ -140,7 +119,7 @@
 }
 
 .profile-icon {
-  font-size: 24px; /* Adjusted size for consistency */
+  font-size: 100px;
   color: black;
   transition: color 0.3s, background-color 0.3s;
   padding: 5px;
