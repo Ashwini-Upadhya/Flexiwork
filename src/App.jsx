@@ -13,6 +13,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Signup from './Signup'
 import FindJob from './FindJob'
 import JobPostCard from './JobPostCard'
+import Notifications from './Notifications'
 
 function App() {
   return (
@@ -32,6 +33,8 @@ function App() {
 
           {/* Route for FindJOb */}
           <Route path="/findjob" element={<JobPostCard />} />
+
+          <Route path='/Notification' element={<Notifications/>}/>
           
           {/* The rest of the components will be available on the main route */}
           <Route
