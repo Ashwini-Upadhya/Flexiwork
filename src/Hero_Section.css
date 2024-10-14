@@ -99,7 +99,7 @@ body {
 .hero-image img {
   align-items: center;
   align-content: space-between;
-  justify-content: space-between  ;
+  justify-content: space-between;
   width: 100%;
   height: auto;
   border-radius: 10px; /* Optional: Adds rounded corners to the image */

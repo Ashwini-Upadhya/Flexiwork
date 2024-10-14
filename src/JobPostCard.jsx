@@ -46,6 +46,19 @@ const JobPostCard = () => {
       gender: "Female",
       logo: "https://via.placeholder.com/50", // Placeholder logo for Guest Service
     },
+    {
+        title: "Guest Service Associate",
+        company: "Cococart Ventures Pvt Ltd",
+        location: "",
+        dateUpdated: "",
+        applied: 1,
+        deadline: "29 days left",
+        impressions: 300,
+        experience: "Fresher",
+        type: "Job",
+        gender: "Female",
+        logo: "https://via.placeholder.com/50", // Placeholder logo for Guest Service
+      },
   ];
 
   const handleJobClick = (index) => {
