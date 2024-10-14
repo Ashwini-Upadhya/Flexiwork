@@ -4,7 +4,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate
 
 const Navbar = () => {
-  const [activeLink, setActiveLink] = useState('Jobs'); // Track active nav link
+  const [activeLink, setActiveLink] = useState(''); // Track active nav link
   const navigate = useNavigate(); // Using useNavigate for navigation
 
   // Function to handle link clicks
@@ -78,7 +78,7 @@ const Navbar = () => {
         <Link
           to="/Notification"
           className={`navbar-icon ${activeLink === 'Notifications' ? 'active' : ''}`}
-          onClick={() => handleLinkClick('Notifications', '/Notification')}
+          onClick={() => handleLinkClick('Notifications')}
         >
           <img
             src="src/images/i1.png"

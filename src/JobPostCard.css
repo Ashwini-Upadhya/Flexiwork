@@ -152,4 +152,96 @@
     text-align: center;
     margin-top: 50px;
   }
+  .jobpostcard__container {
+    max-height: 500px; /* Adjust height as needed */
+    overflow-y: auto; /* Enables vertical scrolling */
+  }
+  
+  .jobpostcard__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Adjust the gap between job cards */
+  }
+  
+  .jobpostcard__card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    transition: transform 0.3s ease;
+  }
+  
+  .jobpostcard__card:hover {
+    transform: translateY(-5px);
+  }
+  .jobpostcard__details {
+    max-height: 500px; /* Adjust the height as needed */
+    overflow-y: auto; /* Enables vertical scrolling */
+    padding: 16px;
+    background-color: #f9f9f9; /* Background color for the details section */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .jobpostcard__details-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .jobpostcard__details-logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .jobpostcard__details-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .jobpostcard__details-company {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .jobpostcard__details-location {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  .jobpostcard__details-updated {
+    font-size: 0.9rem;
+    color: #999;
+  }
+  
+  .jobpostcard__details-action {
+    margin-top: 16px;
+  }
+  
+  .jobpostcard__apply-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .jobpostcard__apply-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .jobpostcard__details-info {
+    margin-top: 16px;
+  }
+  
+  .jobpostcard__eligibility {
+    margin-top: 24px;
+  }
+  
+  .jobpostcard__select-prompt {
+    font-size: 1.2rem;
+    color: #555;
+  }
   
