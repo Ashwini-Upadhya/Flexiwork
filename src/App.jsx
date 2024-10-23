@@ -14,6 +14,7 @@ import Signup from './Signup'
 import FindJob from './FindJob'
 import JobPostCard from './JobPostCard'
 import Notifications from './Notifications'
+import Learn from './Learn'
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="/findjob" element={<JobPostCard />} />
 
           <Route path='/Notification' element={<Notifications/>}/>
+          <Route path='/Learn' element={<Learn/>}/>
           
           {/* The rest of the components will be available on the main route */}
           <Route

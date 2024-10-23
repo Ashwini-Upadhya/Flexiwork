@@ -1,4 +1,8 @@
 /* General styles for the navbar */
+*{
+  box-sizing: border-box;
+}
+
 .navbar {
   display: flex;
   position: sticky;
