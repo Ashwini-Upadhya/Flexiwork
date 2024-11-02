@@ -1,0 +1,126 @@
+/* Modal container styling */
+.about-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 1000;
+  }
+  
+  /* Header styling */
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #007bffa4;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #555;
+  }
+  
+  /* Content styling */
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  label {
+    margin-bottom: 15px;
+    font-weight: 500;
+  }
+  
+  /* Purpose section styling */
+  .purpose-label {
+    display: block;
+  }
+  
+  .purpose-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+  }
+  
+  .purpose-btn {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Active state only for the selected button */
+  .purpose-btn.active {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+  }
+  
+  /* Hover styling for non-active buttons only */
+  
+  
+  /* Interests input styling */
+  .interests-input {
+    padding: 10px;
+    margin-top: 5px;
+    width: 97%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* About Me text area styling */
+  .about-input {
+    padding: 10px;
+    margin-top: 5px;
+    width: 97%;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Save button styling */
+  .save-btn {
+    padding: 10px 15px;
+    margin-top: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-end; /* Aligns the button to the right */
+    position: absolute; /* Positions button at bottom */
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    width: calc(100% - 40px); /* Adjust width for padding */
+    margin-bottom: 40px;
+  }
+  
+  .save-btn:hover {
+    background-color: #218838;
+  }
+  
+  .Profile_saperater_about_details{
+    width: 100%;
+    height: 1.2px; /* Adjust the height to make it proportional */
+    background-color: black;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }

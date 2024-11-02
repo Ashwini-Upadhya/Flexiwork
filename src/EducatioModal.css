@@ -1,0 +1,81 @@
+.education-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 1000;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #555;
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    flex: 1;
+    overflow-y: auto;
+  }
+  
+  .input-field, .date-field {
+    width: 97%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .date-field {
+    width: 25%;
+  }
+  
+  .duration-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .separator-line {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 16px 0;
+  }
+  
+  .remove-btn, .add-education-btn, .save-btn {
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .remove-btn {
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  
+  .add-education-btn {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+
+  
