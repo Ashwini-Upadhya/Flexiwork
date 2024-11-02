@@ -1,0 +1,142 @@
+.workexp-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 1000;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #555;
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1px;
+    flex: 1;
+    overflow-y: auto;
+  }
+  
+  .input-field {
+    width: 97%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  .duration-label {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 10px; */
+  }
+  
+  .duration-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+  }
+  
+  .date-field {
+    width: 30%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .currently-working {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    padding-top: 5px;
+  }
+  
+  .description-field {
+    width: 97%;
+    height: 80px;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  .add-experience-btn {
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-start;
+  }
+  
+  .add-experience-btn:hover {
+    background-color:  #0056b3;
+  }
+  
+  /* Updated save button styling */
+  .save-Exp-btn {
+    padding: 10px 15px;
+    margin-top: 12px;
+    margin-bottom: 40px;
+    background-color:  #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center; /* Center aligns button horizontally */
+    width: calc(100% );
+  }
+  
+  .save-Exp-btn:hover {
+    background-color: #218838;
+  }
+  
+
+  /* Separator line between experiences */
+.separator-Exp-line {
+    margin: 40px 0;
+    /* margin-top: 20xp; */
+    border: 0;
+    border-top: 1px solid black ;
+  }
+  
+  /* Remove button styling */
+  .remove-btn {
+    padding: 8px 12px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-top: 10px;
+  }
+  
+  .remove-btn:hover {
+    background-color: #c82333;
+  }
+  

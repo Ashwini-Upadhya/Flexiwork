@@ -1,0 +1,137 @@
+.skills-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 1000;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    /* padding-bottom: 5px; */
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #555;
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    flex: 1; /* Allows the content to take available space */
+    overflow-y: auto; /* Enables scrolling if content overflows */
+  }
+  
+  .suggestions-label {
+    font-weight: 500;
+  }
+  
+  .suggestions-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 5px;
+  }
+  
+  .suggestion-btn {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .suggestion-btn.selected {
+    background-color: #d0eaff;
+    color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .suggestion-btn .remove-skill {
+    margin-left: 8px;
+    font-size: 12px;
+    color: #007bff;
+  }
+  
+  .suggestions-container .remove-skill {
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .skills-input {
+    padding: 10px;
+    width: 80%;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-skill-btn {
+    padding: 10px;
+    margin-left: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .selected-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .skill-tag {
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+    background-color: #d0eaff;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 20px;
+  }
+  
+  .skill-tag .remove-skill {
+    margin-left: 8px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .save-btn {
+    padding: 10px 15px;
+    margin-top: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-end; /* Aligns the button to the right */
+    position: absolute; /* Positions button at bottom */
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    width: calc(100% - 40px); /* Adjust width for padding */
+    margin-bottom: 40px;
+  }
+  
+  .save-btn:hover {
+    background-color: #218838;
+  }
+  

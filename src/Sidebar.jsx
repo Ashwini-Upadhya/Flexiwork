@@ -8,18 +8,15 @@ const Sidebar = () => {
         <img src="profile-pic.png" alt="Profile" className="profile-avatar" />
         <h3 className="profile-name">Akshat Rodwal</h3>
         <p className="profile-email">modiakshat13@gmail.com</p>
-        <p className="profile-details">Institute of Engineering and Science, IPS Academy, Indore</p>
       </div>
+
+      <div className='sidebar_saperter'></div>
+
       <ul className="sidebar-links">
+        <li className="active">Profile</li>
         <li>Registrations/Applications</li>
-        <li>Referrals</li>
-        <li>My Rounds</li>
-        <li>Unstop Awards Nominations</li>
-        <li>Watchlist</li>
-        <li>Recently Viewed</li>
-        <li>Mentor Sessions</li>
-        <li>Courses</li>
       </ul>
+      <button className="logout-btn">Logout</button>
     </div>
   );
 };
