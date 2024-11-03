@@ -182,7 +182,7 @@ const ProfileHeader = ({ userData = {}, onBannerChange, onAvatarChange }) => {
             {/* Pronouns */}
             <div className="form-group">
               <label>Pronouns:</label>
-              <div className="button-group">
+              <div className="button-Profile-group">
                 <button type="button" className={profileData.pronouns === 'He/Him/His' ? 'active' : ''} onClick={() => handlePronounChange('He/Him/His')}>He/Him/His</button>
                 <button type="button" className={profileData.pronouns === 'She/Her' ? 'active' : ''} onClick={() => handlePronounChange('She/Her')}>She/Her</button>
                 <button type="button" className={profileData.pronouns === 'Do not want to show' ? 'active' : ''} onClick={() => handlePronounChange('Do not want to show')}>Do not want to show</button>
@@ -192,7 +192,7 @@ const ProfileHeader = ({ userData = {}, onBannerChange, onAvatarChange }) => {
             {/* Gender */}
             <div className="form-group">
               <label>Gender:</label>
-              <div className="button-group">
+              <div className="button-Profile-group">
                 <button type="button" className={profileData.gender === 'Male' ? 'active' : ''} onClick={() => handleGenderChange('Male')}>Male</button>
                 <button type="button" className={profileData.gender === 'Female' ? 'active' : ''} onClick={() => handleGenderChange('Female')}>Female</button>
                 <button type="button" className={profileData.gender === 'Other' ? 'active' : ''} onClick={() => handleGenderChange('Other')}>Other</button>
@@ -202,7 +202,7 @@ const ProfileHeader = ({ userData = {}, onBannerChange, onAvatarChange }) => {
             {/* User Type */}
             <div className="form-group">
               <label>User Type:</label>
-              <div className="button-group">
+              <div className="button-Profile-group">
                 <button type="button" className={profileData.userType === 'College Student' ? 'active' : ''} onClick={() => handleUserTypeChange('College Student')}>College Student</button>
                 <button type="button" className={profileData.userType === 'Experienced' ? 'active' : ''} onClick={() => handleUserTypeChange('Experienced')}>Experienced</button>
                 <button type="button" className={profileData.userType === 'Fresher' ? 'active' : ''} onClick={() => handleUserTypeChange('Fresher')}>Fresher</button>

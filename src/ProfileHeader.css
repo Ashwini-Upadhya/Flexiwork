@@ -225,13 +225,13 @@
     border-radius: 4px;
   }
   
-  .button-group {
+  .button-Profile-group {
     display: flex;
     gap: 10px;
     margin-bottom: 10px;
   }
   
-  .button-group button {
+  .button-Profile-group button {
     padding: 8px 12px;
     border: 1px solid #007bff;
     background-color: white;
@@ -240,7 +240,7 @@
     cursor: pointer;
   }
   
-  .button-group button.active,
+  .button-Profile-group button.active,
   .button-group button:hover {
     background-color: #007bff;
     color: white;

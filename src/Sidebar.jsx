@@ -1,7 +1,7 @@
 import React from 'react';
 import './Sidebar.css';
 
-const Sidebar = () => {
+const Sidebar = ({ activeSection, setActiveSection }) => {
   return (
     <div className="sidebar">
       <div className="profile-info">
@@ -13,8 +13,18 @@ const Sidebar = () => {
       <div className='sidebar_saperter'></div>
 
       <ul className="sidebar-links">
-        <li className="active">Profile</li>
-        <li>Registrations/Applications</li>
+        <li 
+          onClick={() => setActiveSection('profile')}
+          className={activeSection === 'profile' ? 'active' : ''}
+        >
+          Profile
+        </li>
+        <li 
+          onClick={() => setActiveSection('registrations')}
+          className={activeSection === 'registrations' ? 'active' : ''}
+        >
+          Registrations/Applications
+        </li>
       </ul>
       <button className="logout-btn">Logout</button>
     </div>
