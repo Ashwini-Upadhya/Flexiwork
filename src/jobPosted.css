@@ -1,21 +1,22 @@
-.registrations-page {
+.job-posted-container-unique {
     padding: 20px;
     background-color: #fff;
+    width: 196%;
 }
 
-.registration_saperter {
+.job-posted-separator-unique {
     margin: 20px 0;
     width: 100%;
     height: 1px;
     background-color: black;
 }
 
-.company-list {
+.job-posted-list-unique {
     list-style: none;
     padding: 0;
 }
 
-.company-item {
+.job-posted-item-unique {
     display: flex;
     align-items: center;
     padding: 15px;
@@ -25,52 +26,46 @@
     background-color: #fff;
 }
 
-.company-logo img {
+.job-posted-logo-unique img {
     width: 50px;
     height: 50px;
     border-radius: 8px;
     margin-right: 15px;
 }
 
-.company-details {
+.job-posted-details-unique {
     flex-grow: 1;
 }
 
-.job-title {
+.job-posted-job-title-unique {
     font-size: 1.1em;
     margin: 0;
 }
 
-.company-name {
+.job-posted-company-name-unique {
     font-size: 0.9em;
     color: #666;
     margin: 5px 0;
 }
 
-.posting-date,
-.application-date {
+.job-posted-date-unique,
+.job-posted-applicants-count-unique {
     font-size: 0.85em;
     color: #888;
     margin: 2px 0;
 }
 
-.submission-status {
+.job-posted-status-unique {
     display: flex;
     align-items: center;
     margin-left: auto; /* Pushes the button to the far right */
 }
 
-.submitted-btn {
+.job-posted-inquiry-button-unique {
     padding: 10px 10px;
-    border: solid 1px #28a745;
+    border: solid 1px #007bff;
     background-color: white;
-    color: #28a745;
+    color: #007bff;
     border-radius: 4px;
     cursor: pointer;
 }
-
-/* .arrow-symbol {
-    font-size: 1.5em;
-    color: #007bff;
-    margin-left: 8px;
-} */

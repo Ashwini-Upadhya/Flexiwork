@@ -19,6 +19,7 @@ import InternshipCategory from './InternshipCategory'
 import BrowseInternsip from './BrowseInternship'
 import Hero_section2_Internship from './Hero_section2_Internship'
 import JobseekerProfile from './JobseekerProfile'
+import RecruiterProfile from './RecruiterProfile'
 
 function App() {
   return (
@@ -42,6 +43,8 @@ function App() {
           <Route path='/Notification' element={<Notifications/>}/>
 
           <Route path='/Profile' element={<JobseekerProfile/>}/>
+
+           {/* <Route path='/Profile' element={<RecruiterProfile/>}/> */}
           
           {/* The rest of the components will be available on the main route */}
           <Route
