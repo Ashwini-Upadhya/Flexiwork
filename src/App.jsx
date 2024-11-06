@@ -8,6 +8,7 @@ import Hero_Slider from './Hero_Slider'
 import Jobpostform from './jobpostform'
 import JobsCategory from './JobsCategory'
 import Login from './Login'
+import Learn from './Learn'
 import Navbar from './Navbar'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Signup from './Signup'
@@ -33,6 +34,7 @@ function App() {
           {/* Route for Login and Sign up */}
            <Route path="/login" element={<Login />} />
            <Route path='/Signup' element={<Signup/>} />
+           <Route path='/Learn' element={<Learn/>} />
 
           {/* Route for post job form */}
           <Route path="/post-form" element={<Jobpostform />} />
