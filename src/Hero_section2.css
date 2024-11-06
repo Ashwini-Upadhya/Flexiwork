@@ -1,0 +1,106 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Adjusted height */
+  padding: 10px 20px; /* Adjust horizontal padding as needed */
+
+  box-sizing: border-box;
+}
+
+.hero-content {
+  display: flex;
+  width: 100%;
+  max-width: 1300px; /* Limit the maximum width */
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 50%;
+  margin-right: 20px; /* Space between text and image */
+  margin-left: 60px;
+}
+
+.hero-headline {
+  font-size: 3rem; /* Increased font size */
+  font-weight: bold;
+  margin-bottom: 30px; /* Reduced margin */
+  margin-left: 1px;
+  margin-top: -30px;
+}
+
+.text-light-blue {
+  color: #005bb5; /* Light blue color */
+}
+
+.text-black {
+  color: #000000; /* Black color */
+}
+
+.hero-paragraph {
+  font-size: 1.25rem; /* Adjust font size as needed */
+  margin-bottom: 20px; /* Adjust margin */
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+.btn {
+  margin-top: 60px;
+  padding: 15px 30px; /* Increased padding for bigger size */
+  text-decoration: none;
+  color: white;
+  border-radius: 50px; /* Rounded corners */
+  font-weight: bold;
+  font-size: 18px; /* Increased font size */
+}
+
+.btn-primary {
+  background-color: #0066cc; /* New blue color for the primary button */
+  box-shadow: 0 4px 6px rgba(0, 102, 204, 0.3); /* Added a subtle shadow for style */
+  border: 2px solid #005bb5; /* Border for a sharper look */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.btn-primary:hover {
+  background-color: #005bb5; /* Darker shade on hover */
+}
+
+.btn-secondary {
+  background-color: transparent; /* Outline style */
+  color: black; /* Black text color */
+  border: 2px solid black; /* Black border */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.btn-secondary:hover {
+  background-color: black; /* Black background on hover */
+  color: white; /* White text on hover */
+}
+
+.hero-image {
+  flex: 1;
+  max-width: 50%;
+  margin-top: -90px;
+}
+
+.hero-image img {
+  align-items: center;
+  align-content: space-between;
+  justify-content: space-between  ;
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional: Adds rounded corners to the image */
+}
