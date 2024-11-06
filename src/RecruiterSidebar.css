@@ -1,0 +1,88 @@
+.recruiter-sidebar {
+    width: 250px;
+    height: 89%;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: sticky;
+}
+  
+.recruiter-profile-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.recruiter-profile-avatar {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.recruiter-profile-name {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.recruiter-profile-email {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.recruiter-sidebar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.recruiter-sidebar-links li {
+    padding: 10px;
+    cursor: pointer;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 10px;
+}
+
+.recruiter-sidebar-links li:hover {
+    background-color: #67affd8e;
+}
+
+.recruiter-sidebar-links .active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.recruiter-logout-btn {
+    color: #ff4d4d;
+    background-color: white;
+    border: solid 1px #ff4d4d;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: flex-start;
+    width: 100%;
+    margin-top: auto;
+    transition: 0.4s;
+}
+
+.recruiter-logout-btn:hover {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.recruiter-sidebar-separator {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 0.1px;
+    background-color: rgba(0, 0, 0, 0.21);
+}
+
+
+
+
+
+
