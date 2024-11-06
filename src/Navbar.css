@@ -1,8 +1,4 @@
 /* General styles for the navbar */
-*{
-  box-sizing: border-box;
-}
-
 .navbar {
   display: flex;
   position: sticky;
@@ -181,8 +177,8 @@
   transition: all 0.3s ease-in-out;
 }
 
-.navbar-icon.active .notification-icon {
-  filter: brightness(1.5); /* Example: Make the icon brighter when active */
-  border-radius: 50%; /* Optional: Add a border or background when active */
-  border: 2px solid #007bff; /* Example: Add a border when active */
-}
+/* .navbar-icon.active .notification-icon { */
+  /* filter: brightness(1.5); Example: Make the icon brighter when active */
+  /* border-radius: 50%; Optional: Add a border or background when active */
+  /* border: 2px solid #007bff; Example: Add a border when active */
+/* } */

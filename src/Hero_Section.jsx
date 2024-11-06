@@ -16,8 +16,10 @@ const Hero_Section = () => {
           </p>
           <div className="hero-buttons">
             <Link to="/findjob" className="btn btn-primary">
+
+            
               Find Jobs
-            </Link>
+            </Link >
             {/* Use Link to navigate to the job post form */}
             <Link to="/post-form" className="btn btn-secondary">
               Post Jobs

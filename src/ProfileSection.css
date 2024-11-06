@@ -1,0 +1,35 @@
+.profile-section {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .section-icon {
+    margin-right: 10px;
+  }
+  
+  .section-title {
+    flex-grow: 1;
+    font-size: 1.1em;
+  }
+  
+  .section-btn {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .streaks-container {
+    margin-top: 10px;
+  }
+  

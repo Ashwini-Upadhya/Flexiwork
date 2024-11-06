@@ -3,7 +3,13 @@ import "./Signup.css";
 import VisibilityOffOutlinedIcon from "@mui/icons-material/VisibilityOffOutlined";
 import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
 import Navbar from "./Navbar";
-import { Link } from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import { handlesuccess } from "../utils";
+import { handleerror } from "../utils";
+
+
+
 
 const UniqueSignup = () => {
   const [userType, setUserType] = useState("JobSeeker");
@@ -15,6 +21,7 @@ const UniqueSignup = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [errors, setErrors] = useState([]);
+  const [email, setemail] = useState("");
 
   const togglePasswordVisibility = () => {
     setPasswordVisible(!passwordVisible);
@@ -40,15 +47,17 @@ const UniqueSignup = () => {
     // }
     return errorList;
   };
-
+  const navigate = useNavigate();
   const handlePasswordChange = (e) => {
     const newPassword = e.target.value;
     setPassword(newPassword);
     const validationErrors = validatePassword(newPassword);
     setErrors(validationErrors);
+    const newemail= e.target.value;
+    setemail(newemail)
   };
 
-  const handleSignup = (e) => {
+  const handleSignup = async (e) => {
     e.preventDefault();
     if (password !== confirmPassword) {
       setErrors(["Passwords do not match."]);
@@ -57,6 +66,49 @@ const UniqueSignup = () => {
       if (errors.length === 0) {
         // Handle signup logic
         console.log("Signup successful");
+        const userdata = { email:email, password:password, role:userType}
+        console.log(userdata)
+        try {
+             const response = await fetch("http://localhost:5000/route/signup",
+            {  method:"POST",
+                headers: {
+              "Content-Type":"application/json",
+            },
+            body:JSON.stringify(userdata),
+          
+          }); 
+
+        let result = await response.json()
+        
+  
+
+         
+         console.log(response);
+         console.log(result)
+           let {Msg, success,error} = result
+
+           if (!success){
+            handleerror(Msg)
+           }
+           if (success){
+
+
+            handlesuccess("account created successfully")
+            setTimeout(() => {
+              navigate("/login")
+              
+             },1000);
+         
+           }
+    
+    
+
+     
+        } catch (error) {
+          console.log("register",error);
+            
+        }
+
       }
     }
   };
@@ -96,6 +148,7 @@ const UniqueSignup = () => {
               <input
                 type="email"
                 id="email"
+                onChange={(e)=>setemail(e.target.value)}
                 required
                 onFocus={() => setFocused(true)}
                 onBlur={(e) => !e.target.value && setFocused(false)}
@@ -189,6 +242,7 @@ const UniqueSignup = () => {
         <div className="unique-auth-image">
           <img src="\src\images\signup_image1.png" alt="Signup Illustration" />
         </div>
+        <ToastContainer/>
       </div>
     </>
   );

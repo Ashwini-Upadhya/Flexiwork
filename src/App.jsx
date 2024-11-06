@@ -14,7 +14,12 @@ import Signup from './Signup'
 import FindJob from './FindJob'
 import JobPostCard from './JobPostCard'
 import Notifications from './Notifications'
-import Learn from './Learn'
+import Hero_section_Internship from './Hero_section_Internship'
+import InternshipCategory from './InternshipCategory'
+import BrowseInternsip from './BrowseInternship'
+import Hero_section2_Internship from './Hero_section2_Internship'
+import JobseekerProfile from './JobseekerProfile'
+import 'react-toastify/ReactToastify.css'
 
 function App() {
   return (
@@ -36,7 +41,8 @@ function App() {
           <Route path="/findjob" element={<JobPostCard />} />
 
           <Route path='/Notification' element={<Notifications/>}/>
-          <Route path='/Learn' element={<Learn/>}/>
+
+          <Route path='/Profile' element={<JobseekerProfile/>}/>
           
           {/* The rest of the components will be available on the main route */}
           <Route
@@ -52,7 +58,23 @@ function App() {
               </>
             }
           />
+
+            <Route
+            path="/Internship"
+            element={
+              <>
+                <Hero_section_Internship />
+                <Hero_Slider />
+                <InternshipCategory />
+                <BrowseInternsip />
+                <CategoriesSection />
+                <Hero_section2_Internship />
+              </>
+            }
+          />
         </Routes>
+
+        
 
         {/* Footer remains at the bottom */}
         

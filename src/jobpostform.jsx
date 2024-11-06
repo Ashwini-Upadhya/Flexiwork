@@ -18,6 +18,10 @@ import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import Button from '@mui/material/Button';
 import Navbar from './Navbar';
+import { ToastContainer } from "react-toastify";
+import { handlesuccess } from "../utils";
+import { handleerror } from "../utils";
+
   
   // Multi-select styling
   const ITEM_HEIGHT = 48;
@@ -61,7 +65,7 @@ export default function Jobpostform() {
         companyName: "",
         companyLogo: "",
         jobTitle: "",
-        jobNature: "",
+        jobnature: "",
         jobTime: "",
         workplaceType: "",
         workLocation: [],
@@ -82,11 +86,43 @@ export default function Jobpostform() {
 
     const [allCities, setAllCities] = useState(cities);
 
-    let [JobIntern , setJobIntern ] = useState("Jobs");
+    // let [JobIntern , setJobIntern ] = useState("");
 
-    let [WorkType , setWorkType] = useState('In Office')
+    let [WorkType , setWorkType] = useState('')
 
-    let [jobTime , setJobTime] = useState("Full Time");
+    let [jobTime , setJobTime] = useState("");
+
+    let [jobnature, setjobnature] = useState("")
+
+    let setnature = (nature)=>{
+      if(nature== "Jobs" ){
+      formdata.jobnature="Job"
+      setFromdata(formdata)}
+      if(nature== "Internships" )
+        formdata.jobnature="Internship"
+        setFromdata(formdata)
+    }
+
+    let settime = (time)=>{
+      if(time== "Full Time" ){
+      formdata.jobTime="Full Time"
+      setFromdata(formdata)}
+      if(time== "Part Time" )
+        formdata.jobTime="Part Time"
+        setFromdata(formdata)
+    }
+    let  workplaceType = (type)=>{
+      if(type== "In Office" ){
+      formdata.workplaceType="In Office"
+      setFromdata(formdata)}
+      if(type== "Work From Home" ){
+        formdata.workplaceType="Work From Home"
+        setFromdata(formdata)}
+        if(type== "Hybrid" ){
+          formdata.workplaceType="Hybrid"
+          setFromdata(formdata)}
+    }
+ 
 
     let handleinput = (event) => {
         const { name, value } = event.target;
@@ -168,9 +204,46 @@ export default function Jobpostform() {
     }
   };
 
-    let handlesubmit = (event) => {
+    let handlesubmit = async (event) => {
         event.preventDefault();
-        console.log(formdata);
+        console.log(formdata,jobnature);
+        try {
+              
+          
+        
+          const response = await fetch("http://localhost:5000/route/postjob",
+            {  method:"POST",
+                headers: {
+                "Authorization": localStorage.getItem("token"),
+              "Content-Type":"application/json",
+            },
+            body:JSON.stringify(formdata),
+          
+          }); 
+           
+         let result = await response.json()
+
+         
+         console.log(response);
+           console.log(result);
+           let {message, success,error} = result
+
+           if (!success){
+            handleerror(message)
+           }
+           if (success){
+
+
+            handlesuccess("Job created successfuly")
+       
+         
+           }
+
+        } catch (error) {
+          console.log("register",error);
+            
+        }
+
         setFromdata({
             companyName: "",
             companyLogo: "",
@@ -259,21 +332,24 @@ export default function Jobpostform() {
 
           {/* Job Nature Section */}
           <div className="form-group">
-            <label htmlFor="jobNature" className="form-label">Job Nature*</label>
+            <label htmlFor="jobnature" className="form-label">Job Nature*</label>
             <div className="button-group">
               <button
                 type="button"
-                className={`nature-button ${JobIntern === "Jobs" ? "active" : ""}`}
-                onClick={() => setJobIntern("Jobs")}
+                className={`nature-button ${jobnature === "Jobs" ? "active" : ""}`}
+                onClick={()=> (setnature("Jobs"))}
+               
+                
               >
-                Jobs
+                Job
               </button>
               <button
                 type="button"
-                className={`nature-button ${JobIntern === "Internships" ? "active" : ""}`}
-                onClick={() => setJobIntern("Internships")}
+                className={`nature-button ${jobnature === "Internships" ? "active" : ""}`}
+                onClick={() => setnature("Internships")}
+
               >
-                Internships
+                Internship
               </button>
             </div>
           </div>
@@ -286,14 +362,14 @@ export default function Jobpostform() {
               <button
                 type="button"
                 className={`nature-button ${jobTime === "Full Time" ? "active" : ""}`}
-                onClick={() => setJobTime("Full Time")}
+                onClick={()=>settime("Full Time")}
               >
                 Full Time
               </button>
               <button
                 type="button"
                 className={`nature-button ${jobTime === "Part Time" ? "active" : ""}`}
-                onClick={() => setJobTime("Part Time")}
+                onClick={() => settime("Part Time")}
               >
                 Part Time
               </button>
@@ -310,7 +386,7 @@ export default function Jobpostform() {
                   <button
                     type="button"
                     className={`nature-button ${WorkType === "In Office" ? "active" : ""}`}
-                    onClick={() => setWorkType("In Office")}
+                    onClick={() => workplaceType("In Office")}
                   >
                     In Office
                   </button>
@@ -322,7 +398,7 @@ export default function Jobpostform() {
                   <button
                     type="button"
                     className={`nature-button ${WorkType === "Work From Home" ? "active" : ""}`}
-                    onClick={() => setWorkType("Work From Home")}
+                    onClick={() => workplaceType("Work From Home")}
                   >
                     Work From Home
                   </button>
@@ -334,7 +410,7 @@ export default function Jobpostform() {
                   <button
                     type="button"
                     className={`nature-button ${WorkType === "Hybrid" ? "active" : ""}`}
-                    onClick={() => setWorkType("Hybrid")}
+                    onClick={() => workplaceType("Hybrid")}
                   >
                     Hybrid
                   </button>
@@ -547,6 +623,7 @@ export default function Jobpostform() {
           {/* jobDescription Section */}
           <div className="form-group">
             <label htmlFor="jobDescription" className="form-label">Job Description</label>
+            
 
             <CKEditor
               editor={ClassicEditor}
@@ -582,6 +659,7 @@ export default function Jobpostform() {
           </div>
 
         </form>
+        <ToastContainer/>
       </div></>
     );
 }

@@ -1,9 +1,7 @@
 import React from 'react';
-import './CategoriesSection.css';
-import { useNavigate } from 'react-router-dom'; // We will create this CSS file
+import './CategoriesSection.css'; // We will create this CSS file
 
 const CategoriesSection = () => {
-  const navigate = useNavigate();
   return (
     <section className="categories-section">
       <div className="category-card internship">
@@ -12,7 +10,7 @@ const CategoriesSection = () => {
         <p className='i-p'> <b>Gain</b> <br /> Practical <br />Experience</p>
         <img className='images' src="src\images\b6.png" alt="Internship" />
       </div>
-      <div className="category-card learn" onClick={() => {navigate('/Learn')}}>
+      <div className="category-card learn">
         <h2>Learn</h2>
         <p className='l-p'> <b>Expand</b> <br /> Knowledge Base</p>
         <img src="src\images\b3 (1).png" alt="Learn" />
