@@ -18,6 +18,7 @@ import BrowseInternsip from './BrowseInternship'
 import Hero_section2_Internship from './Hero_section2_Internship'
 import JobseekerProfile from './JobseekerProfile'
 import RecruiterProfile from './RecruiterProfile'
+import Learn from './Learn'
 
 function App() {
   return (
@@ -40,6 +41,8 @@ function App() {
           <Route path="/findjob" element={<JobPostCard />} />
 
           <Route path='/Notification' element={<Notifications/>}/>
+
+          <Route path='/Learn' element={<Learn/>}/>
 
           <Route path='/Profile' element={<JobseekerProfile/>}/>
 

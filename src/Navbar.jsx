@@ -30,7 +30,7 @@ const Navbar = () => {
 
       <div className="navbar-center">
         <Link
-          className={`navbar-link ${activeLink === '/Learn' ? 'active' : ''}`}
+          className={`navbar-link ${activeLink === 'Learn' ? 'active' : ''}`}
           to="/Learn"
           onClick={() => handleLinkClick('Learn','/Learn')}
         >
