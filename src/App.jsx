@@ -1,7 +1,6 @@
 import './App.css'
 import BrowseJobs from './BrowseJobs'
 import CategoriesSection from './CategoriesSection'
-import Footer from './Footer'
 import Hero_Section from './Hero_Section'
 import Hero_section2 from './Hero_section2'
 import Hero_Slider from './Hero_Slider'
@@ -9,10 +8,8 @@ import Jobpostform from './jobpostform'
 import JobsCategory from './JobsCategory'
 import Login from './Login'
 import Learn from './Learn'
-import Navbar from './Navbar'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Signup from './Signup'
-import FindJob from './FindJob'
 import JobPostCard from './JobPostCard'
 import Notifications from './Notifications'
 import Hero_section_Internship from './Hero_section_Internship'
@@ -78,7 +75,6 @@ function App() {
 
         
 
-        {/* Footer remains at the bottom */}
         
       </div>
     </Router>
